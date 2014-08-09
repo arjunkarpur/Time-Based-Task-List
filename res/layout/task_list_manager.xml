@@ -1,0 +1,50 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${packageName}.${activityClass}" >
+
+    <RelativeLayout
+        android:id="@+id/relative_layout_complete_task"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="20dp" >
+
+        <EditText
+            android:id="@+id/etMinutesAvailableEntered"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:inputType="numberSigned"
+            android:maxLength="3" >
+        </EditText>
+
+        <TextView
+            android:id="@+id/tvMinutesAvailableFollowingText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/etMinutesAvailableEntered"
+            android:layout_toRightOf="@+id/etMinutesAvailableEntered"
+            android:text="minutes available" />
+
+        <Button
+            android:id="@+id/bAddNewTask"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignBaseline="@+id/tvMinutesAvailableFollowingText"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/tvMinutesAvailableFollowingText"
+            android:text="@string/get_it_done"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/lvTasksList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/relative_layout_complete_task" >
+    </ListView>
+
+</RelativeLayout>

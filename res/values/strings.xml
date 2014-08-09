@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">TimeBasedTaskList</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title">Time-Based Task List</string>
+    <string name="get_it_done">Get it done!</string>
+
+</resources>
