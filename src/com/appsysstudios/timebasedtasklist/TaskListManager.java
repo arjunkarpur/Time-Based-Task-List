@@ -3,6 +3,8 @@ package com.appsysstudios.timebasedtasklist;
 import java.util.ArrayList;
 
 import android.app.DialogFragment;
+import android.content.Context;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
@@ -22,6 +24,7 @@ public class TaskListManager extends ActionBarActivity {
 	// TaskListAdapter taskListAdapter;
 	TaskListAdapter taskListAdapter;
 	ArrayList<Task> taskArrayList = new ArrayList<Task>();
+	
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -37,7 +40,6 @@ public class TaskListManager extends ActionBarActivity {
 	}
 
 	public void populateList() {
-		
 
 	}
 

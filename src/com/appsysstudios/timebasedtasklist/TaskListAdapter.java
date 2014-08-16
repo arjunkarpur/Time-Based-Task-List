@@ -46,7 +46,14 @@ public class TaskListAdapter extends ArrayAdapter<Task> {
 				.findViewById(R.id.task_list_item_time);
 
 		// Assign the appropriate data from our alert object above
-		String timeMessage = task.getTaskTime() + " minute";
+		
+		String timeMessage;
+		
+		if (task.getTaskTime() == 1) {
+			timeMessage = task.getTaskTime() + " minute";
+		} else {
+			timeMessage = task.getTaskTime() + " minutes";
+		}
 		
 		taskName.setText(task.getTaskName());
 		taskTime.setText(timeMessage);
