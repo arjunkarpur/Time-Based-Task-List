@@ -5,5 +5,10 @@
     <string name="hello_world">Hello world!</string>
     <string name="title">Time-Based Task List</string>
     <string name="get_it_done">Get it done!</string>
+    <string name="new_task_name_prompt">Task description</string>
+    <string name="new_task_time_prompt">Estimated time for completion</string>
+    <string name="ok">Ok</string>
+    <string name="cancel">Cancel</string>
+    <string name="add_new_task">Add New Task</string>
 
 </resources>

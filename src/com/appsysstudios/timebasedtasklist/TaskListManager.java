@@ -2,6 +2,7 @@ package com.appsysstudios.timebasedtasklist;
 
 import java.util.ArrayList;
 
+import android.app.DialogFragment;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
@@ -36,9 +37,7 @@ public class TaskListManager extends ActionBarActivity {
 	}
 
 	public void populateList() {
-		taskArrayList.add(new Task("touch nose", 15));
-		taskArrayList.add(new Task("eat pear", 3));
-		taskArrayList.add(new Task("hue", 23));
+		
 
 	}
 
@@ -65,10 +64,16 @@ public class TaskListManager extends ActionBarActivity {
 			// do stuff
 			return true;
 		case R.id.add_task:
-			// do stuff
+			DialogFragment newTaskDialog = new AddNewTaskDialog();
+			newTaskDialog.show(getFragmentManager(), "AddNewTask");
 			return true;
 		default:
 			return super.onOptionsItemSelected(item);
 		}
+	}
+
+	public void addNewTaskToList(Task newTask) {
+		taskArrayList.add(newTask);
+		taskListAdapter.notifyDataSetChanged();
 	}
 }
