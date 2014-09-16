@@ -14,4 +14,4 @@ TODO:
 Possible additions/features to app (...?):
 - Priority of tasks (tasks with higher priority are presented to user first)
 
-*NOTE: This projects references 'appcompact_v7' as a library. Make sure you have you have appcompact v7 set as a library and in the same directory as your project, as it won't compile without it.
+*NOTE: This projects references 'appcompact_v7' as a library. Make sure you have appcompact v7 set as a library and in the same directory as your project, as it won't compile without it.
